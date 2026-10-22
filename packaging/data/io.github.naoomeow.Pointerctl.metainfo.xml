@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.naoomeow.Pointerctl</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Pointerctl</name>
+  <developer id="io.github.naoomeow"><name>pointerctl contributors</name></developer>
+  <summary>Unofficial settings tool for mice</summary>
+  <description>
+    <p>Change the settings stored on a mouse without the manufacturer's Windows software: DPI levels, polling rate, button debounce time, button functions (including keyboard shortcuts and media keys) and lighting.</p>
+    <p>Currently supports the Meetion GM21. Other models are not tested yet and are refused unless you explicitly override the check. This project is not affiliated with or endorsed by Meetion.</p>
+    <p>The mouse needs a one-time udev rule so your user can access it. The package installs it; with Flatpak, run the installer script from the project page once.</p>
+  </description>
+  <launchable type="desktop-id">io.github.naoomeow.Pointerctl.desktop</launchable>
+  <url type="homepage">https://github.com/naOomeow/pointerctl</url>
+  <url type="bugtracker">https://github.com/naOomeow/pointerctl/issues</url>
+  <provides><binary>pointerctl-gui</binary><binary>pointerctl</binary></provides>
+  <categories><category>Settings</category><category>HardwareSettings</category></categories>
+  <content_rating type="oars-1.1"/>
+  <screenshots>
+    <screenshot type="default"><image type="source">https://raw.githubusercontent.com/naOomeow/pointerctl/main/docs/screenshots/performance.png</image><caption>DPI levels, polling rate and debounce time</caption></screenshot>
+    <screenshot><image type="source">https://raw.githubusercontent.com/naOomeow/pointerctl/main/docs/screenshots/buttons.png</image><caption>Button functions and keyboard shortcuts</caption></screenshot>
+    <screenshot><image type="source">https://raw.githubusercontent.com/naOomeow/pointerctl/main/docs/screenshots/lighting.png</image><caption>Lighting stored on the mouse</caption></screenshot>
+    <screenshot><image type="source">https://raw.githubusercontent.com/naOomeow/pointerctl/main/docs/screenshots/effects.png</image><caption>Animated live effects</caption></screenshot>
+  </screenshots>
+  <releases><release version="0.1.0" date="2026-10-22"/></releases>
+</component>

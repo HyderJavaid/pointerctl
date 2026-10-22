@@ -1,0 +1,760 @@
+{
+ "led1": {
+  "action": "solid",
+  "params": {
+   "color": "yellow",
+   "brightness": 7
+  }
+ },
+ "led5": {
+  "action": "solid",
+  "params": {
+   "color": "yellow",
+   "brightness": 7
+  }
+ },
+ "led4": {
+  "action": "solid",
+  "params": {
+   "color": "red",
+   "brightness": 7
+  }
+ },
+ "led2": {
+  "action": "solid",
+  "params": {
+   "color": "green",
+   "brightness": 2
+  }
+ },
+ "led6": {
+  "action": "solid",
+  "params": {
+   "color": "blue",
+   "brightness": 7
+  }
+ },
+ "led7": {
+  "action": "solid",
+  "params": {
+   "color": "magenta",
+   "brightness": 7
+  }
+ },
+ "led8": {
+  "action": "solid",
+  "params": {
+   "color": "cyan",
+   "brightness": 7
+  }
+ },
+ "led9": {
+  "action": "solid",
+  "params": {
+   "color": "white",
+   "brightness": 7
+  }
+ },
+ "led3": {
+  "action": "solid",
+  "params": {
+   "color": "yellow",
+   "brightness": 3
+  }
+ },
+ "lm1": {
+  "action": "effect",
+  "params": {
+   "mode": "breath",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm2": {
+  "action": "effect",
+  "params": {
+   "mode": "water",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm3": {
+  "action": "effect",
+  "params": {
+   "mode": "single",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm4": {
+  "action": "effect",
+  "params": {
+   "mode": "comet",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm5": {
+  "action": "effect",
+  "params": {
+   "mode": "neon",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm6": {
+  "action": "effect",
+  "params": {
+   "mode": "ambient",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lm7": {
+  "action": "effect",
+  "params": {
+   "mode": "off",
+   "brightness": 7,
+   "frequency": 3
+  }
+ },
+ "lmb1": {
+  "action": "effect",
+  "params": {
+   "mode": "breath",
+   "brightness": 3,
+   "frequency": 3
+  }
+ },
+ "lmf1": {
+  "action": "effect",
+  "params": {
+   "mode": "breath",
+   "brightness": 3,
+   "frequency": 5
+  }
+ },
+ "lmn1": {
+  "action": "effect",
+  "params": {
+   "mode": "neon",
+   "brightness": 3,
+   "frequency": 6
+  },
+  "skip_head": 30
+ },
+ "dpi0": {
+  "action": "config",
+  "params": {
+   "dpi1": 1200,
+   "dpi2": 2000,
+   "dpi3": 3200,
+   "dpi4": 4800,
+   "dpi5": 7200,
+   "dpi6": 12800,
+   "select": 1
+  }
+ },
+ "dpi1": {
+  "action": "config",
+  "params": {
+   "dpi1": 1600,
+   "dpi2": 2000,
+   "dpi3": 3200,
+   "dpi4": 4800,
+   "dpi5": 7200,
+   "dpi6": 12800,
+   "select": 1
+  }
+ },
+ "dpi2": {
+  "action": "config",
+  "params": {
+   "dpi1": 1600,
+   "dpi2": 1600,
+   "dpi3": 3200,
+   "dpi4": 4800,
+   "dpi5": 7200,
+   "dpi6": 12800,
+   "select": 2
+  }
+ },
+ "dpi3": {
+  "action": "config",
+  "params": {
+   "dpi1": 1600,
+   "dpi2": 1600,
+   "dpi3": 800,
+   "dpi4": 1000,
+   "dpi5": 1200,
+   "dpi6": 1400,
+   "select": 6
+  }
+ },
+ "dpi4": {
+  "action": "config",
+  "params": {
+   "dpi1": 1800,
+   "dpi2": 2400,
+   "dpi3": 4000,
+   "dpi4": 5600,
+   "dpi5": 6400,
+   "dpi6": 9600,
+   "select": 6
+  }
+ },
+ "dpi5": {
+  "action": "config",
+  "params": {
+   "dpi1": 10400,
+   "dpi2": 11200,
+   "dpi3": 11200,
+   "dpi4": 12800,
+   "dpi5": 5600,
+   "dpi6": 400,
+   "select": 6
+  }
+ },
+ "dpi6": {
+  "action": "config",
+  "params": {
+   "dpi1": 8000,
+   "dpi2": 8800,
+   "dpi3": 200,
+   "dpi4": 600,
+   "dpi5": 800,
+   "dpi6": 1200,
+   "select": 6
+  }
+ },
+ "poll1": {
+  "action": "config",
+  "params": {
+   "rate": 1000
+  }
+ },
+ "poll2": {
+  "action": "config",
+  "params": {
+   "rate": 125
+  }
+ },
+ "poll3": {
+  "action": "config",
+  "params": {
+   "rate": 250
+  }
+ },
+ "fire1": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 200
+  }
+ },
+ "fire2": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51
+  }
+ },
+ "tog1": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable6": 0
+  }
+ },
+ "tog2": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable6": 0,
+   "enable2": 0
+  }
+ },
+ "ml0": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ambient",
+   "led_brightness": 7,
+   "led_speed": 4,
+   "symmetry": 0,
+   "direction": 0
+  }
+ },
+ "ml1": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ambient",
+   "led_brightness": 3,
+   "led_speed": 4,
+   "symmetry": 0,
+   "direction": 0
+  }
+ },
+ "ml2": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ambient",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 0,
+   "direction": 0
+  }
+ },
+ "ml3": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ambient",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml4": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ambient",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 1
+  }
+ },
+ "ml5": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "dpi-breathing",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml6": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "flashing",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml7": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "led-off",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml8": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "cycle-breath",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml9": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "always-bright",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml10": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "flowing-water",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml11": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "mono-water",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml12": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml13": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "neon",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml14": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "effect-9",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml15": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "ripple",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml16": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "effect-11",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "ml17": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "effect-12",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "kb0": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0
+  }
+ },
+ "kb1": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button4": "double-click"
+  }
+ },
+ "kb2a": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "show-desktop",
+   "button3": "fire",
+   "button4": "dpi-plus",
+   "button5": "dpi-minus",
+   "button6": "double-click",
+   "button7": "none"
+  }
+ },
+ "kb2b": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "play-pause",
+   "button3": "fire",
+   "button4": "dpi-plus",
+   "button5": "dpi-minus",
+   "button6": "double-click",
+   "button7": "none"
+  }
+ },
+ "kb3": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "play-pause",
+   "button3": "volume-up",
+   "button4": "dpi-plus",
+   "button5": "dpi-minus",
+   "button6": "double-click",
+   "button7": "none"
+  }
+ },
+ "kb4": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "play-pause",
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button6": "double-click",
+   "button7": "none"
+  }
+ },
+ "kb5": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "play-pause",
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button6": "double-click",
+   "button7": "calculator"
+  }
+ },
+ "kb6": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "play-pause",
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button6": "stop",
+   "button7": "calculator"
+  }
+ },
+ "kb7": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button7": "calculator",
+   "button6": "stop",
+   "button2": "shortcut:ctrl+c"
+  }
+ },
+ "kb8": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button7": "calculator",
+   "button6": "stop",
+   "button2": "shortcut:ctrl+v"
+  }
+ },
+ "kb9": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button3": "volume-up",
+   "button4": "mute",
+   "button5": "next-track",
+   "button7": "calculator",
+   "button6": "stop",
+   "button2": "shortcut:ctrl+c"
+  }
+ },
+ "kb10": {
+  "action": "config",
+  "params": {
+   "rate": 250,
+   "debounce_ms": 51,
+   "enable2": 0,
+   "enable6": 0,
+   "led_mode": "comet-tail",
+   "led_brightness": 3,
+   "led_speed": 2,
+   "symmetry": 1,
+   "direction": 0,
+   "button2": "shortcut:ctrl+c",
+   "button3": "volume-up",
+   "button4": "shortcut:ctrl+a",
+   "button5": "shortcut:ctrl+z",
+   "button6": "stop",
+   "button7": "calculator"
+  }
+ }
+}

@@ -1,0 +1,36 @@
+name: Test report
+description: Tell us what worked and what didn't on your mouse
+labels: ["test-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing! Reports from any supported or untested mouse help. Please do not use `--yes` (writes) on a model that is
+        not marked tested unless you accept the risk; see "Help wanted" in the README.
+  - type: input
+    id: model
+    attributes: {label: "Mouse model and USB id", description: "From `pointerctl identify`, for example Meetion GM21, 30fa:1441"}
+    validations: {required: true}
+  - type: input
+    id: setup
+    attributes: {label: "Version, install method, distribution", description: "For example 0.1.0, .deb, Linux Mint 22"}
+    validations: {required: true}
+  - type: checkboxes
+    id: worked
+    attributes:
+      label: What worked (tick what you tried and saw working)
+      options:
+        - label: The mouse was detected (`pointerctl list`)
+        - label: DPI levels
+        - label: Polling rate
+        - label: Button functions and media keys
+        - label: Keyboard shortcuts on buttons
+        - label: Lighting stored on the mouse
+        - label: Colour or effects
+        - label: The window (GUI)
+  - type: textarea
+    id: problems
+    attributes: {label: "What didn't work, or looked wrong", description: "What you ran or clicked, what you expected and what happened"}
+  - type: textarea
+    id: identify
+    attributes: {label: "Output of `pointerctl identify`", render: text}

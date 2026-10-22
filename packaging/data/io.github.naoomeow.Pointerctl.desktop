@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Pointerctl
+GenericName=Mouse settings
+Comment=Configure mice: DPI, polling rate, buttons and lighting
+Exec=pointerctl-gui
+Icon=io.github.naoomeow.Pointerctl
+Terminal=false
+Categories=Settings;HardwareSettings;GTK;
+Keywords=mouse;dpi;polling;rgb;lighting;buttons;macro;pointerctl;
+StartupNotify=true

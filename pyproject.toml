@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pointerctl"
+version = "0.1.0"
+description = "Unofficial Linux configuration tool for mice (DPI, polling rate, buttons, lighting) over hidraw; supports the Meetion GM21"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = []
+classifiers = ["Operating System :: POSIX :: Linux", "License :: OSI Approved :: MIT License"]
+
+[project.urls]
+Homepage = "https://github.com/naOomeow/pointerctl"
+Issues = "https://github.com/naOomeow/pointerctl/issues"
+
+[project.scripts]
+pointerctl = "pointerctl.cli:main"
+
+[project.gui-scripts]
+pointerctl-gui = "pointerctl.gui.app:main"
+
+[project.optional-dependencies]
+gui = ["PyGObject"]
+
+[tool.setuptools]
+packages = ["pointerctl", "pointerctl.gui"]
+
+[tool.setuptools.package-data]
+pointerctl = ["profiles/*/*.json", "profiles/*/*.seq", "profiles/*/*/*.seq", "gui/icons/hicolor/symbolic/apps/*.svg"]

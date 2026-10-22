@@ -1,0 +1,16 @@
+# Never commit vendor software, its extracted files, or raw captures (they may contain vendor data or serial numbers).
+*.exe
+*.dll
+*.pcapng
+*.pcap
+captures/
+extracted/
+extracted-configs/
+*.log
+# python
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+.flatpak-builder/

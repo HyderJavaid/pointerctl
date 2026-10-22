@@ -1,0 +1,4 @@
+# HID devices with USB vendor id 30fa: give the logged-in user access to the hidraw nodes.
+# The file name matters: it must sort BEFORE 73-seat-late.rules, which is what turns the "uaccess" tag into a per-user ACL.
+# (On systems without systemd-logind, replace TAG+="uaccess" with GROUP="plugdev" and add yourself to that group.)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="30fa", MODE="0660", TAG+="uaccess"

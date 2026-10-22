@@ -1,0 +1,37 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests (GUI tests skip themselves without a display)
+        run: python -m unittest discover -s tests -v
+
+  packages:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate desktop file and AppStream metadata
+        run: |
+          sudo apt-get update && sudo apt-get install -y desktop-file-utils appstream
+          desktop-file-validate packaging/data/*.desktop
+          appstreamcli validate --no-net packaging/data/*.metainfo.xml
+      - name: Build the .deb and the wheel
+        run: |
+          sudo apt-get install -y fakeroot
+          ./packaging/build-deb.sh
+          python -m pip wheel --no-deps -w dist .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages
+          path: dist/*

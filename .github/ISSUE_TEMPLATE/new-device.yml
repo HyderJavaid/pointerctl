@@ -1,0 +1,24 @@
+name: Support for a new mouse
+description: Ask for, or offer help with, a mouse that is not supported yet
+labels: ["new-device"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A mouse does not describe its own configuration protocol, so support needs captures of the manufacturer's software.
+        See docs/adding-a-mouse.md. Nothing in this form requires you to run anything that writes to the mouse.
+  - type: input
+    id: model
+    attributes: {label: "Exact model and USB id", description: "From `pointerctl identify`, for example 30fa:1441"}
+    validations: {required: true}
+  - type: textarea
+    id: identify
+    attributes: {label: "Output of `pointerctl identify`", render: text}
+    validations: {required: true}
+  - type: checkboxes
+    id: help
+    attributes:
+      label: What can you do?
+      options:
+        - label: I can run the manufacturer's software (Windows or a VM) and capture USB traffic
+        - label: I can test changes on this mouse
